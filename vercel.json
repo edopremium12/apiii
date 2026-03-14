@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/file/:folder/:filename*",
+      "destination": "https://raw.githubusercontent.com/edopremium12/storage-bella-cloudy/main/:folder/:filename*"
+    },
+    {
+      "source": "/data/index.json",
+      "destination": "https://raw.githubusercontent.com/edopremium12/storage-bella-cloudy/main/index.json"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Authorization, Content-Type" }
+      ]
+    }
+  ]
+}
