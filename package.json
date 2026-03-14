@@ -1,0 +1,11 @@
+{
+  "name": "bella-cloudy-api",
+  "version": "5.0.0",
+  "description": "Ultimate API Uploader with RBAC, Auto-Versioning, and Dynamic Limits",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "author": "Edo Pratama",
+  "license": "ISC"
+}
